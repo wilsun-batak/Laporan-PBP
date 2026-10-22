@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan – Maroon & Navy Blue</title>
+    <meta name="description" content="Undangan pernikahan Maroon & Navy Blue, 23 Oktober 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styleuts.css">
+</head>
+<body>
+
+    <!-- ==================== HALAMAN 1: COVER / INTRO ==================== -->
+    <div id="halaman-cover">
+        <!-- Frame Utama Terpusat -->
+        <div class="frame-container">
+            <!-- Gambar Bingkai c1.jpg -->
+            <img src="c1.jpg" class="frame-img" alt="Bingkai Undangan">
+
+            <!-- Semua Teks, Penerima, & Tombol di Dalam Bingkai -->
+            <div class="isi-teks">
+                <p class="sub-judul">KAMI MENGUNDANG ANDA DI</p>
+                <h2 class="judul-acara">PERNIKAHAN</h2>
+
+                <h1 class="nama-mempelai">Maroon</h1>
+                <div class="dan">&</div>
+                <h1 class="nama-mempelai">Navy Blue</h1>
+
+                <div class="baris-tanggal">
+                    <span>OCT</span>
+                    <span class="pembatas">|</span>
+                    <span class="angka-tanggal">23</span>
+                    <span class="pembatas">|</span>
+                    <span>2026</span>
+                </div>
+
+                <p class="waktu">JUMAT, PUKUL 10:00</p>
+                <p class="lokasi">123 Anywhere St., Any City, ST 1234</p>
+
+                <!-- Area Kepada Yth & Tombol -->
+                <div class="area-penerima">
+                    <p class="teks-yth">Kepada Yth.<br><strong>Bapak/Ibu/Saudara/i</strong></p>
+                    <button class="btn-buka" id="btnBuka">Buka Undangan ➔</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HALAMAN 2: DETAIL UNDANGAN ==================== -->
+    <div id="halaman-undangan">
+
+        <!-- NAVBAR BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg navbar-undangan sticky-top">
+            <div class="container">
+                <!-- Logo / Brand -->
+                <a class="navbar-brand navbar-brand-text" href="#">Maroon &amp; Navy Blue</a>
+
+                <!-- Tombol Toggle Mobile -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarUndangan"
+                        aria-controls="navbarUndangan"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Navbar -->
+                <div class="collapse navbar-collapse" id="navbarUndangan">
+                    <ul class="navbar-nav mx-auto gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mempelai">MEMPELAI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acara">ACARA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lokasi">LOKASI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeri">GALERI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rsvp">RSVP</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tombol Kembali ke Cover -->
+                    <button class="btn-kembali ms-2" id="btnKembali">
+                        <i class="bi bi-arrow-left"></i> KEMBALI
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-sub">PERNIKAHAN</p>
+                <div class="hero-nama">Maroon</div>
+                <div class="hero-dan">&amp;</div>
+                <div class="hero-nama">Navy Blue</div>
+                <p class="hero-tanggal">23 · OKTOBER · 2026</p>
+            </div>
+        </section>
+
+        <!-- MEMPELAI -->
+        <section id="mempelai" class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-judul">Mempelai</h2>
+                    <div class="section-garis"></div>
+                </div>
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                        <div class="kartu-mempelai">
+                            <div class="foto-mempelai">
+                                <img src="5.jpg" alt="Foto Maroon" class="foto-pria-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                            <div class="nama">Maroon</div>
+                            <div class="keterangan">PUTRA PERTAMA</div>
+                            <p>Putra dari Bapak Hartono<br>&amp; Ibu Marlina</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="simbol-dan">&amp;</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="kartu-mempelai">
+                            <div class="foto-mempelai">
+                                <img src="4.jpg" alt="Foto Navy Blue" class="foto-wanita-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                            <div class="nama">Navy Blue</div>
+                            <div class="keterangan">PUTRI KEDUA</div>
+                            <p>Putri dari Bapak Susanto<br>&amp; Ibu Dewi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACARA -->
+        <section id="acara" class="py-5" style="background-color: #f5f0e8;">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-judul">Detail Acara</h2>
+                    <div class="section-garis"></div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="kartu-info">
+                            <div class="ikon"><i class="bi bi-calendar-heart"></i></div>
+                            <h5>Tanggal</h5>
+                            <p>Jumat,<br>23 Oktober 2026</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="kartu-info">
+                            <div class="ikon"><i class="bi bi-clock"></i></div>
+                            <h5>Waktu</h5>
+                            <p>Pukul 10:00 – 14:00 WIB<br>Resepsi: 11:00 – selesai</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="kartu-info">
+                            <div class="ikon"><i class="bi bi-geo-alt"></i></div>
+                            <h5>Tempat</h5>
+                            <p>123 Anywhere St.,<br>Any City, ST 1234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section class="py-5 bg-mempelai">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-judul" style="color:#d4a843;">Hitung Mundur</h2>
+                    <div class="section-garis"></div>
+                </div>
+                <div class="row g-3 justify-content-center" id="countdown-row">
+                    <div class="col-6 col-sm-3">
+                        <div class="countdown-box">
+                            <div class="angka" id="cd-hari">--</div>
+                            <div class="label">HARI</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="countdown-box">
+                            <div class="angka" id="cd-jam">--</div>
+                            <div class="label">JAM</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="countdown-box">
+                            <div class="angka" id="cd-menit">--</div>
+                            <div class="label">MENIT</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="countdown-box">
+                            <div class="angka" id="cd-detik">--</div>
+                            <div class="label">DETIK</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOKASI -->
+        <section id="lokasi" class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-judul">Lokasi</h2>
+                    <div class="section-garis"></div>
+                </div>
+                <div class="maps-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1!2d106.8272!3d-6.2297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnNDYuOSJTIDEwNsKwNDknMzcuOSJF!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                        width="100%"
+                        height="320"
+                        style="border:0; display:block;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="https://maps.google.com" target="_blank" class="link-maps">
+                        <i class="bi bi-map"></i> 
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERI -->
+        <section id="galeri" class="py-5" style="background-color: #f5f0e8;">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-judul">Galeri</h2>
+                    <div class="section-garis"></div>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-6 col-md-4">
+                        <div class="galeri-item"><img src="1.jpg" alt="Foto 1" class="foto-galeri"></div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="galeri-item"><img src="2.jpg" alt="Foto 2" class="foto-galeri"></div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="galeri-item"><img src="3.jpg" alt="Foto 3" class="foto-galeri"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP -->
+        <section id="rsvp" class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-judul">RSVP</h2>
+                    <div class="section-garis"></div>
+                    <p class="rsvp-intro">Mohon konfirmasi kehadiran Anda.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <form id="formRsvp" class="kartu-rsvp" novalidate>
+                            <div class="mb-3">
+                                <label for="rsvpNama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="rsvpNama" placeholder="Nama lengkap Anda" required maxlength="60">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label d-block">Konfirmasi Kehadiran</label>
+                                <div class="btn-group w-100" role="group">
+                                    <input type="radio" class="btn-check" name="hadir" id="hadirYa" value="Hadir" checked>
+                                    <label class="btn btn-pilih" for="hadirYa">Hadir</label>
+                                    <input type="radio" class="btn-check" name="hadir" id="hadirTidak" value="Tidak Hadir">
+                                    <label class="btn btn-pilih" for="hadirTidak">Tidak Hadir</label>
+                                </div>
+                            </div>
+                            <div class="mb-3" id="grupJumlah">
+                                <label for="rsvpJumlah" class="form-label">Jumlah Tamu</label>
+                                <select class="form-select" id="rsvpJumlah">
+                                    <option value="1">1 orang</option>
+                                    <option value="2">2 orang</option>
+                                    <option value="3">3 orang</option>
+                                    <option value="4">4 orang</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="rsvpUcapan" class="form-label">Ucapan &amp; Doa</label>
+                                <textarea class="form-control" id="rsvpUcapan" rows="3" placeholder="Tulis ucapan untuk kedua mempelai" maxlength="300"></textarea>
+                            </div>
+                            <button type="submit" class="btn-rsvp w-100">
+                                <i class="bi bi-send"></i> KIRIM KONFIRMASI
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer-undangan">
+            <p>Dengan penuh cinta &amp; kebahagiaan, <span>Maroon &amp; Navy Blue</span></p>
+            <p class="footer-sub">23 Oktober 2026 &nbsp;·&nbsp; 10:00 WIB</p>
+            <div class="mt-3">
+                <button class="btn-footer-kembali" id="btnFooterKembali">
+                    <i class="bi bi-arrow-left"></i> KEMBALI KE UNDANGAN
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Musik latar -->
+    <audio id="musik" src="l1.mp3" loop preload="auto" playsinline></audio>
+    <button id="btnMusik" class="btn-musik" aria-label="Putar atau hentikan musik" title="Musik">
+        <i class="bi bi-music-note-beamed"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="uts.js"></script>
+
+</body>
+</html>
